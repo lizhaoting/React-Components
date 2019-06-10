@@ -1,0 +1,68 @@
+.default {
+  display: flex;
+  flex-direction: row;
+  font-size: 15px;
+  word-break: break-word;
+}
+
+.ifSingleLine {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.cursorhand {
+  cursor: pointer;
+}
+
+.href {
+  color: #329fd9;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.href:hover {
+  text-decoration: underline;
+}
+
+.textleft {
+  margin-left: 10px;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.bottom {
+  margin-top: 15px;
+}
+
+.baseline {
+  margin-top: 8px;
+}
+
+.innerClass {
+  font: 18px/22px 'SourceSans Pro semibold';
+}
+
+.hyperlink {
+  color: #329fd9;
+}
+
+.fitcontent {
+  width: fit-content;
+}
+
+.fitcontent>span {
+  font-size: 15px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 20px;
+  cursor: pointer;
+  display: inline-block;
+  padding-right: 50px;
+}

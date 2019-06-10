@@ -1,0 +1,75 @@
+.icon-normal {
+  font-size: 15px;
+}
+
+.icon-larger {
+  font-size: 24px;
+}
+
+.icon-large {
+  font-size: 22px;
+}
+
+.icon-small {
+  font-size: 18px;
+}
+
+.icon-smaller {
+  font-size: 18px;
+}
+
+.icon-spin {
+  display: inline-block;
+  animation: loadingCircle .8s infinite linear;
+}
+
+@keyframes loadingCircle {
+  0% {
+    transform-origin: 50% 50%;
+    transform: rotate(0deg);
+  }
+  100% {
+    transform-origin: 50% 50%;
+    transform: rotate(1turn);
+  }
+}
+
+.icon-hover:hover {
+  transform: scale(1.1);
+}
+
+.list {
+  list-style: none;
+  overflow: hidden;
+  zoom: 1;
+}
+
+.list li {
+  float: left;
+  width: 16.66%;
+  text-align: center;
+  list-style: none;
+  cursor: pointer;
+  height: 100px;
+  color: #555;
+  transition: all 0.2s ease;
+  position: relative;
+  margin: 3px 0;
+  border-radius: 4px;
+  background-color: #fff;
+  overflow: hidden;
+  padding: 10px 0 0 0;
+}
+.list li span{
+  display: block;
+  text-align: center;
+  white-space: nowrap;
+  margin-top: 10px;
+}
+.list li:hover{
+  color: #329FD9;
+}
+.list li:hover .icon{
+  transform: scale(1.2);
+}
+

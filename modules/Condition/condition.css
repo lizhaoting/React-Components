@@ -1,0 +1,184 @@
+.addCondition {
+  color: #329fd9;
+}
+
+.conditionContainer {
+  overflow-y: auto;
+  max-height: 244px;
+  margin-top: 15px;
+  display: none;
+}
+
+.containershow {
+  display: block;
+}
+
+.conditionContainer div:last-child>div {
+  margin-bottom: 0px;
+}
+
+.conditionContainer::-webkit-scrollbar {
+  width: 8px!important;
+  opacity: 1;
+}
+
+.conditionContainer::-webkit-scrollbar-button {
+  display: none;
+}
+
+.conditionContainer::-webkit-scrollbar-thumb {
+  background-color: #cdcdcd;
+}
+
+.conditionContainer::-webkit-scrollbar-thumb:hover {
+  background-color: #a8a8a8;
+}
+
+.conditionRow {
+  margin: 0px 0px 20px 0px;
+  display: flex;
+  flex-direction: row;
+}
+
+.deleteBtn {
+  display: inline-block;
+  line-height: 30px;
+}
+
+.deleteBtn i {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: rgb(102, 102, 102);
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.conditionNo {
+  display: inline-block;
+  line-height: 30px;
+  width: 16px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+.conditionNo span {
+  vertical-align: middle;
+  font-size: 13px;
+  color: #333;
+}
+
+.showDatePicker {
+  text-align: right;
+  margin-right: 32px;
+  margin-bottom: 20px!important;
+  margin-top: 20px;
+}
+
+.lastShowDatePicker {
+  margin-bottom: 0px!important;
+}
+
+.inputdiv {
+  display: inline-block;
+  flex: 1;
+}
+
+.inputdiv span {
+  margin-left: 5px;
+  color: #666;
+}
+
+.inputClass {
+  height: 30px;
+  margin-left: 10px;
+  color: #666;
+  width: 186px!important;
+}
+
+.inputwidth {
+  width: 128px!important;
+}
+
+.pickerfirst {
+  margin-right: 4px;
+}
+
+.datepickerwidth {
+  width: 114px;
+  color: #666;
+}
+
+.pickerfirst+span:nth-child(2) {
+  margin-right: 3px;
+  color: #ccc;
+}
+
+.isBlank {
+  border: 1px solid red!important;
+}
+
+.conditionSelect {
+  width: 178px;
+  vertical-align: middle;
+  margin: 0px 0px 0px 10px;
+}
+
+:global(.rc-calendar-picker-placement-bottomLeft>.rc-calendar) {
+  margin-top: 30px!important;
+}
+
+:global(.rc-calendar-picker-placement-topLeft>.rc-calendar) {
+  margin-top: 0px!important;
+}
+
+:global(.__react_component_tooltip.place-top:after) {
+  border-left: 10px solid transparent!important;
+  border-right: 10px solid transparent!important;
+  bottom: -6px!important;
+  left: 45%!important;
+  margin-left: -10px!important;
+}
+
+:global(.__react_component_tooltip.place-bottom:after) {
+  border-left: 10px solid transparent!important;
+  border-right: 10px solid transparent!important;
+  bottom: -6px!important;
+  /* left: 45%!important; */
+  margin-left: -10px!important;
+}
+
+
+/* start components css */
+
+.selectArrow {
+  padding-left: 0px!important;
+  padding-top: 1px;
+}
+
+.selectArrow i {
+  margin-left: 8px;
+}
+
+.selectLabel {
+  margin-right: 35px;
+  padding-right: 0px;
+}
+
+.input {
+  padding: 0 5px;
+  border: 1px solid #ccc;
+  width: calc(100% - 22px);
+}
+
+.input[readOnly] {
+  border: 1px solid #ccc;
+  width: 158px;
+  height: 30px;
+}
+
+.operateDiv {
+  margin-top: 15px;
+}
+
+
+/* end components css*/

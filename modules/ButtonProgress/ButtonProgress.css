@@ -1,0 +1,106 @@
+.buttonProgressContainer {
+  position: relative;
+  text-align: center;
+}
+.buttonProgressBtnAnimated {
+  -webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both
+}
+.buttonProgressBtnDefaultSize {
+  width: 160px;
+}
+.buttonProgressContainerLoading .buttonProgressBtnAnimated {
+  animation-name: form__submit--loading;
+  animation-duration:.4s;
+}
+@keyframes form__submit--loading {
+  0% {
+    border-radius: 2px;
+    text-indent: 999em;
+    background: #329FD9;
+    border: 1px solid #329FD9;
+  }
+
+  100% {
+    border-radius: 32px;
+    text-indent: 999em;
+    background: #fff;
+    border: 1px solid #fff;
+    width: 32px;
+  }
+}
+.buttonProgress__layerCircle, .buttonProgress__layerSuccess, .buttonProgress__layerLoading {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: none;
+}
+.buttonProgressContainerLoading .buttonProgress__layerLoading {
+  display: block;
+}
+.buttonProgressContainerSuccess .buttonProgress__layerLoading {
+  display: none;
+}
+.buttonProgressContainerSuccess .buttonProgress__layerCircle, .buttonProgressContainerSuccess .buttonProgress__layerSuccess {
+  display: block;
+}
+.buttonProgress__submitLoadingPath {
+  fill: #329FD9;
+}
+.buttonProgress__submitCirclePath {
+  stroke: #329FD9;
+  stroke-width: 3px;
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+ /* animation: dash .417s linear 0.625s;
+  animation-fill-mode: both;*/
+  fill:#fff;
+  fill-opacity: 0;
+}
+.buttonProgressContainerSuccess .buttonProgress__submitCirclePath {
+
+
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+
+  animation-name: buttonProgress__submitCirclePath-dash;
+  animation-duration: .5s;
+  /*animation-delay: .167s;*/
+}
+
+@keyframes buttonProgress__submitCirclePath-dash {
+  from {
+    stroke-dashoffset: 100;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.buttonProgress__submitSuccessPath {
+  fill:#329FD9;
+  stroke-width:1;
+  transform: scale(0);
+  opacity: 0;
+}
+.buttonProgressContainerSuccess .buttonProgress__submitSuccessPath {
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-name: buttonProgress__submitSuccessPath-animation;
+  animation-duration: .5s;
+  animation-delay: 0.542s;
+}
+@keyframes buttonProgress__submitSuccessPath-animation {
+  0% {
+    transform: scale(0);
+    transform-origin: 50% 50%;
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    opacity: 1;
+  }
+}

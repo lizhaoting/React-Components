@@ -1,0 +1,43 @@
+.ticketContent {
+  background: #fafafa;
+}
+.topMenu {
+  height: 40px;
+  border: 1px solid #ccc;
+  border-bottom: 0px;
+}
+.topMenu ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+.topMenu li {
+  float: left;
+  padding: 0px 10px;
+  line-height: 39px;
+  color: #bbb;
+  height: 39px;
+  font-size: 14px;
+}
+.editorWraper{
+  border: 1px solid #329fd9;
+  height: 125px;
+}
+.topMenu li.selected {
+  border-bottom:2px solid #329fd9;
+  color: #333;
+}
+.topMenu li > span {
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.topMenu li > i {
+  position: relative;
+  top: 3px;
+  cursor: pointer;
+}
+.error{
+  border: 1px solid rgb(215, 61, 61);
+}

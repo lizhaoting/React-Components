@@ -1,0 +1,94 @@
+.emailHeader {
+  border: 1px solid #ccc;
+  background: #f8f8f8;
+}
+
+.headerSimple {
+  border: 1px solid #f1f3f6!important;
+}
+
+.subjectdiv {
+  border-bottom: 1px solid #ccc;
+  position: relative;
+  padding-left: 10px;
+}
+
+.todiv {
+  border-bottom: 1px solid #ccc;
+  padding-left: 10px;
+}
+
+.ccdiv {
+  padding-left: 10px;
+}
+
+.input {
+  border: transparent;
+  background: transparent;
+}
+
+.subjectitem {
+  width: 54px;
+  color: #888;
+}
+
+.toitem {
+  width: 22px;
+  color: #888;
+}
+
+.subjectinput {
+  width: calc(100% - 60px);
+}
+
+.toinput {
+  width: calc(100% - 29px);
+}
+
+.ccinput {
+  width: calc(100% - 25px);
+}
+
+.isRequired {
+  color: #de3939;
+  position: absolute;
+  right: 10px;
+  top: 9px;
+}
+
+.error {
+  border: 1px solid #de3939;
+}
+
+.hid {
+  display: none;
+}
+
+.toSimpleMode {
+  border: 1px solid #f1f3f6;
+  background: #f1f3f6!important;
+  height: 30px;
+  vertical-align: middle;
+  line-height: 30px;
+}
+
+.ccSimpleMode {
+  border: 1px solid #ccc;
+  position: relative;
+}
+
+.link {
+  color: #329fd9;
+  cursor: pointer;
+}
+
+.change {
+  display: inline;
+  margin-left: 10px;
+}
+
+.remove {
+  position: absolute;
+  right: 20px;
+  bottom: 6px;
+}

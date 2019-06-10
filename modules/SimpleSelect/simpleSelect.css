@@ -1,0 +1,85 @@
+.SimpleSelect {
+  display: inline;
+}
+
+.integrationUsers {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.integrationUsers span {
+  color: #3aafed;
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+.integrationUsers i {
+  position: relative;
+  top: 3px;
+}
+
+.integrationUsers ul {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  z-index: 10086;
+  list-style: none;
+  border: 1px solid #ddd;
+  right: 10px;
+  bottom: 20px;
+  white-space: nowrap;
+  background: #fff;
+  text-align: left;
+}
+
+.integrationUsers li {
+  padding: 0;
+  line-height: 30px;
+  height: 30px;
+  border-bottom: 1px solid #ddd;
+}
+
+.integrationUsers li:first-of-type {
+  margin-top: 0px;
+}
+
+.integrationUsers li:last-of-type {
+  margin-bottom: 0px;
+}
+
+.userslist li {
+  padding: 0px 10px;
+}
+
+.userslist li:hover {
+  background: #fafafa;
+}
+
+.userslist li.selected {
+  background: #cce7f5;
+}
+
+.sender {
+  cursor: pointer;
+}
+
+.chosensender {
+  transform: rotate(90deg);
+  color: #888;
+  margin: 5px 10px 5px 10px;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.hide {
+  display: none;
+}
+
+.newticketfrom {
+  color: #888;
+  display: inline!important;
+  margin-right: 5px;
+}

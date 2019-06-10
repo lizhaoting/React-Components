@@ -1,0 +1,102 @@
+
+.tablecontainer {
+  border: 1px solid #E0E0E0;
+  border-radius: 4px;
+  overflow: auto;
+  font-size: 13px;
+  clear: both;
+  min-width: 1266px;
+}
+
+.nodata {
+  text-align: center;
+  margin: 60px;
+}
+
+.table{
+  color: #4a4a4a;
+  border-radius: 4px;
+  border-collapse: separate;
+  border:0;
+  margin:0;
+  border-collapse:collapse;
+  border-spacing:0;
+  white-space: nowrap;
+  min-width: 100%;
+}
+
+.table .thead {
+  background-color: #E1E1E1;
+}
+
+.table .tbody .singleLine{
+  background-color: #F5F5F5;
+}
+
+.table .tbody .doubleLine{
+  background-color: #EBEBEB;
+}
+
+.table span {
+  text-align: left;
+  margin: auto 5px;
+  vertical-align: middle;
+  display:-webkit-inline-box;
+}
+
+.table .th {
+  text-align: left;
+  line-height:20px;
+  vertical-align:middle;
+  padding: 3px 5px 3px 15px;
+  position:relative;
+  cursor:default;
+}
+
+.table td{
+  padding-left:22px;
+  text-align: left;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  /*white-space: nowrap;*/
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+}
+.table .odd td{
+  background-color:#EBEBEB
+}
+.table .even td{
+  background-color: #F5F5F5
+}
+
+
+.table tr {
+  -webkit-transition: background 0.2s ease-in;
+  -moz-transition: background 0.2s ease-in;
+  transition: background 0.2s ease-in;
+}
+.table tr:hover td {
+  background: #fff;
+}
+.table .hightlight {
+  background-color: #D7D7D7;
+}
+
+.tablecontainer .sort, .tablecontainer .help{
+  position: relative;
+  top: 3px;
+  display:inline-block;
+  width:16px;
+  height:16px;
+}
+.tablecontainer .sortdown{
+  background:url('/../../Resources/Images/sort_down.png') no-repeat;
+}
+.tablecontainer .sortup{
+  background:url('/../../Resources/Images/sort_up.png') no-repeat;
+}
+.tablecontainer .help{
+  background:url('/../../Resources/Images/help.png') no-repeat center center;
+}
+

@@ -1,0 +1,254 @@
+.form {}
+
+.horizontalForm {}
+
+.verticalForm {}
+
+div.verticalForm div.formItem>div:last-child {
+  margin-top: 5px;
+}
+
+.formContent {
+  margin-bottom: 64px;
+}
+
+.verticalForm .formContent {
+  margin-bottom: 30px;
+}
+
+.formFooter {
+  position: absolute;
+  bottom: 30px;
+  left: calc(50% - 95px);
+}
+
+.formItem {
+  margin-bottom: 10px;
+}
+
+.formItem div {
+  display: inline-block;
+}
+
+.okButton {
+  margin-right: 15px;
+  text-align: center;
+  min-width: 80px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.cancelButton {
+  margin-right: 15px;
+  text-align: center;
+  min-width: 80px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.requiredSpan {
+  display: none;
+}
+
+.required {
+  color: #de3939!important;
+  margin-right: 3px;
+  margin-left: 5px;
+  display: inline-block;
+}
+
+.horizontalForm .inputcontainer {
+  margin-left: 45px;
+}
+
+.verticalForm .inputcontainer {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.verticalForm .radioOptionContainer {
+  display: block;
+}
+
+.verticalForm .dateContainer {
+  margin-bottom: 5px;
+}
+
+.verticalForm .checkboxlist {
+  display: block;
+}
+
+.horizontalForm .input {
+  width: 300px;
+  color: #333;
+}
+
+.verticalForm .input {
+  width: 100%;
+}
+
+.checkboxcontainer {
+  vertical-align: middle;
+  margin-bottom: 5px;
+  margin-left: 31px;
+}
+
+.groupcontainer {
+  padding-top: 10px;
+}
+
+span[class^='Checkbox__checkboxContainer'] {
+  margin-top: -12px;
+}
+
+.visiable {
+  display: block!important;
+}
+
+.hidden {
+  display: none;
+}
+
+.errorinfo {
+  color: #de3939;
+}
+
+.isRequired {
+  color: #de3939;
+  margin-left: 3px;
+}
+
+span[class^='Select__selectLabel']>i {
+  vertical-align: middle;
+  margin-bottom: 4px;
+}
+
+.tags {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  display: block!important;
+  margin-top: 10px!important;
+  cursor: pointer;
+}
+
+.tagItem,
+.addItem {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  height: 30px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px 10px;
+  background: #f8f8f8;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  cursor: pointer;
+  user-select: none;
+}
+
+.tags a {
+  display: inline-block;
+  margin-top: 5px;
+  vertical-align: top;
+}
+
+.tagItem.selected {
+  background: #333;
+  color: #fff;
+  border: 1px solid #000;
+}
+
+.tagItem:hover,
+.addItem:hover {
+  border: 1px solid #000;
+}
+
+.addItem:hover i {
+  color: #333;
+}
+
+.tagItem i {
+  color: #888;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.tagName {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.deleteIcon {
+  display: inline-block;
+  margin-bottom: 7px;
+  vertical-align: bottom;
+}
+
+.textarea {
+  font-size: 15px;
+  color: #222;
+  border-radius: 3px;
+  width: 100%!important;
+  resize: none;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: #fafafa;
+  border: 1px solid #ccc;
+  padding: 4px 10px;
+  min-height: 64px;
+  margin-top: 6px;
+}
+
+.textarea:focus {
+  border: 1px solid #319ed7;
+  outline: none;
+}
+
+.checkboxItem {
+  display: block!important;
+  margin: 5px 0px;
+}
+
+.checkboxItem>span {
+  margin-left: 5px;
+}
+
+.selectedContainer {
+  width: 100%;
+}
+
+.dateContainer {
+  width: 100%;
+}
+
+.dateContainer>div {
+  width: 100%!important;
+}
+
+.dateContainer>div input {
+  width: 100%!important;
+  background: #fafafa;
+}
+
+.formColor {
+  color: #888;
+}
+
+.verticalForm .floatLeft {
+  float: left;
+  width: 48%;
+}
+
+.verticalForm .floatRight {
+  float: right;
+  width: 48%;
+}
+
+.clearboth {
+  clear: both;
+}

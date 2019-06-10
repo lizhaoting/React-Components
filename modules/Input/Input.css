@@ -1,0 +1,138 @@
+/* Stylesheet for Input */
+
+.input {
+  height: 30px;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  border-radius: 2px;
+  transition: border-color ease-in-out 0.2s;
+  background-color: #fafafa;
+  font-size: 15px;
+  font-family: "SourceSans Pro";
+}
+
+.input:disabled {
+  background-color: #f5f5f5;
+}
+
+.input[readOnly] {
+  border: 0;
+}
+
+input.attachTicket {
+  width: 100px;
+  margin-left: 5px;
+}
+
+.input:focus {
+  border-color: #329FD9;
+  outline: none;
+}
+
+.input.error,
+.input.error:hover,
+.input.error:focus {
+  border-color: #d34747;
+}
+
+.prependContainer {
+  display: inline-block;
+}
+
+.prepend {
+  display: inline-block;
+  line-height: 18px;
+  padding: 5px 5px 4px 5px;
+  background-color: #fafafa;
+}
+
+.prependContainer .input {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.prependIcon {
+  float: left;
+  padding: 0 6px 0 0;
+}
+
+.defaultIcon {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+.inputContainer {
+  position: relative;
+  display: inline-block;
+  /*text-align: center;*/
+}
+
+.input.input--effect01 {
+  border: 1px solid #ccc;
+  border-right-color: #329fd9;
+  padding: 5px 10px;
+  border-radius: 0;
+}
+
+.input__focusBorder {
+  display: block;
+  /*margin-bottom: 15px;*/
+}
+
+.input.input--effect01~.input__focusBorder:before,
+.input.input--effect01~.input__focusBorder:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #329fd9;
+}
+
+.input.input--effect01~.input__focusBorder:after {
+  top: auto;
+  bottom: 0;
+  left: 0;
+}
+
+.input.input--effect01~.input__focusBorder i:before,
+.input.input--effect01~.input__focusBorder i:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 1px;
+  height: 0;
+  background-color: #329fd9;
+}
+
+.input.input--effect01~.input__focusBorder i:after {
+  left: auto;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #ccc;
+  height: 100%;
+}
+
+.input.input--effect01:focus~.input__focusBorder:before,
+.input.input--effect01:focus~.input__focusBorder:after {
+  width: 100%;
+  transition: 0.48s;
+  transition-delay: 0.08s;
+}
+
+.input.input--effect01:focus~.input__focusBorder i:before,
+.input.input--effect01:focus~.input__focusBorder i:after {
+  height: 100%;
+  transition: 0.08s;
+  top: 0;
+}
+
+.input.input--effect01:focus~.input__focusBorder i:after {
+  height: 0;
+  transition-delay: 0.56s;
+  top: 50%;
+}

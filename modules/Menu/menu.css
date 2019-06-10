@@ -1,0 +1,175 @@
+.itemContainer {
+  font: 15px/30px 'SourceSans Pro';
+  color: #333;
+  position: relative;
+  height: 100%;
+}
+
+.menuTitle {
+  padding-left: 10px;
+  cursor: pointer;
+  background: #fafafa;
+  height: 30px;
+  line-height: 30px;
+  position: relative;
+}
+
+.menuTitle:hover div.operationgroup {
+  visibility: visible!important;
+}
+
+.mainIcon {
+  font-size: 16px;
+  vertical-align: top;
+  display: inline-block;
+  margin-top: 2px;
+  color: #bbb;
+}
+
+.expandIcon {
+  font-size: 14px;
+  margin-top: 8px;
+  display: inline-block;
+  margin: 0 5px;
+  color: #bbb;
+}
+
+.hasNoSub {
+  margin-left: 10px;
+}
+
+.noSub {}
+
+.noSub:hover {
+  background: #e6e6e6;
+}
+
+.operationgroup {
+  min-width: 66px;
+  margin-top: 2px;
+  visibility: hidden;
+  display: none;
+  position: absolute;
+  right: 5px;
+  top: 1px;
+  z-index: 100;
+}
+
+.showOperation {
+  display: block;
+}
+
+.mainText {
+  font-family: 'SourceSans Pro bold';
+  line-height: 29px;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.refresh {
+  margin: 0px 15px;
+  color: #777;
+  font-size: 16px;
+}
+
+.settings {
+  color: #777;
+  font-size: 16px;
+}
+
+.corner {
+  margin: 6px 5px 0px 5px;
+}
+
+.showcorner {
+  display: inline-block!important;
+}
+
+.cornerdiv {
+  display: none;
+  position: absolute;
+  min-width: 16px;
+  right: 5px;
+  top: 1px;
+}
+
+.submenuitem {
+  position: relative;
+  height: 30px;
+  background: #fafafa;
+  cursor: pointer;
+}
+
+.submenuitem:hover {
+  background: #e6e6e6;
+}
+
+.submenutext {
+  margin-right: 5px;
+  margin-left: 51px;
+}
+
+.submenutextcorner {
+  width: calc(100% - 85px);
+}
+
+.isSelected {
+  background: #CCE7F5;
+}
+
+.isActive {
+  color: #2F9ED9;
+}
+
+.scrollPanel {
+  height: calc(100% - 31px)!important;
+}
+
+.filterMain {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #fafafa;
+}
+
+.flexItem {
+  overflow: hidden;
+}
+
+.divideLine {
+  border-top: 1px solid #ddd;
+}
+
+.MainIcon {
+  margin-top: 7px;
+  font-size: 16px;
+}
+
+.mainMenuText {
+  color: #333;
+}
+
+.refreshIcon {
+  font-size: 15px;
+  color: #777;
+}
+
+.settingIcon {
+  font-size: 15px;
+  color: #777;
+}
+
+.noContent {
+  margin: 5px 15px 0px 30px;
+  font: 15px/20px "SourceSans Pro";
+  color: #979797;
+}
+
+.noContent>a {
+  display: block;
+  outline: none;
+}
+
+:global(.__react_component_tooltip) {
+  z-index: 10086!important;
+}

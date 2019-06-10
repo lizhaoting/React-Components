@@ -1,0 +1,12 @@
+.warnning{
+  line-height: 17px;
+}
+.icon{
+  color: #fe8e14;
+  position: relative;
+  top: 3px;
+  margin-right: 10px;
+}
+.warnningText{
+  color: #888;
+}

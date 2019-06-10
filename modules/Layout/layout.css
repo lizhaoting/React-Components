@@ -1,0 +1,47 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #f1f3f6;
+}
+
+.layout div[class^='label__default'] {
+  font-size: 14px!important;
+}
+
+.content {
+  flex: 1;
+}
+
+.rightContent {
+  height: 100%;
+  padding: 18px;
+  font-size: 14px!important;
+  overflow-y: auto!important;
+}
+
+.leftContent {
+  padding: 10px 20px;
+  height: 100%;
+}
+
+.footer {
+  flex: 0 0 50px;
+  border-top: 1px solid #ddd;
+  margin-left: -1px;
+  text-align: right;
+  vertical-align: middle;
+  line-height: 50px;
+  padding-right: 10px;
+}
+
+.button {
+  min-width: 80px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 10px;
+}
+
+.footerFrom {
+  color: #888;
+}

@@ -1,0 +1,29 @@
+.searchSection {
+  border-bottom: 1px solid #ddd;
+}
+.listContainer {
+  height: 100%;
+  width: 100%;
+  background: #fafafa;
+  float: left;
+}
+.list {
+  height: calc(100% - 51px) !important;
+}
+.remindContainer{
+  font-size: 14px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  padding: 15px;
+  cursor: pointer;
+}
+.noData {
+  display: block;
+  color: #979797;
+  padding: 0px 0px 10px;
+  cursor: default;
+}
+.loadMore {
+  display: block;
+  color: #319ed7;
+}

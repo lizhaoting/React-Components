@@ -1,0 +1,122 @@
+.select {
+  position: relative;
+  display: inline-block;
+  height: 30px;
+  border-radius: 2px;
+  background: linear-gradient(#ededed, #dedede);
+  border: 1px solid #ccc;
+  cursor: pointer;
+  outline: none;
+  color: #666;
+  width: 100%;
+  font-size: 15px;
+  line-height: 30px;
+  user-select: none;
+  border-radius: 4px;
+  text-shadow: #fff 0 1px 0;
+}
+
+.select:hover {
+  background: linear-gradient(#fafafa, #ebebeb);
+}
+.select:active {
+  background: #f4f4f4;
+}
+
+.dropdown {
+    background-color: #fff;
+    border: 1px solid #329FD9;
+    border-radius: 2px;
+    box-sizing: border-box;
+    z-index: 100;
+    outline: none;
+    max-height: 7.2rem;
+    min-height: 1.2rem;
+}
+.dropdown-menu {
+    outline: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+    position: relative;
+    display: inline-block;
+    min-width: 100%;
+    background: #fafafa;
+}
+.dropdown-menu-item {
+    height: 1.2rem;
+    margin: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 3px 7px;
+    font-weight: 400;
+    color: #000;
+    white-space: nowrap;
+    font-size: 11px;
+}
+.dropdown-menu-item:hover {
+    background-color: #1E90FF;
+    color: #FFF;
+    cursor: pointer;
+}
+.dropdown-menu-item:hover + li.dropdown-menu-item.dropdown-menu-item-selected{
+    background-color: '' !important;
+}
+li.dropdown-menu-item.dropdown-menu-item-selected {
+    background-color: #1E90FF;
+    color: #FFF;
+}
+.selectLabel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 400;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: left;
+  width: 100%;
+  line-height: 30px;
+  padding-right: 35px;
+  padding-left: 15px;
+  display: inline-block;
+  align-items: center;
+  font-size: 13px;
+  color: #000;
+}
+
+.selectArrow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 30px;
+  height: 100%;
+  font-size: 12px;
+  padding-left: 9px;
+  padding-top: 2px;
+  text-align: left;
+}
+select:focus ~ .selectArrow{
+  border-color: #999;
+}
+.select:hover .selectArrow{
+  border-color: #aaa;
+}
+.select.active .selectArrow {
+  border-color: #329fd9;
+}
+
+.controlDisabled {
+  background: #e6e6e6;
+  opacity: 0.6;
+  pointer-events: none;
+}
+.optionIcon {
+  padding-right: 5px;
+}
+.tagStyle {
+  padding-left: 15px;
+}

@@ -1,0 +1,19 @@
+.hidden {
+  visibility: hidden;
+}
+
+.show {
+  visibility: visible;
+}
+
+.opIcons {
+  padding-right: 10px;
+}
+
+.opIcons:hover {
+  cursor: pointer;
+}
+
+.alignCenter {
+  text-align: center;
+}

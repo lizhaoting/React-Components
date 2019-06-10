@@ -1,0 +1,20 @@
+.multipleText {
+  border: 1px solid #ccc;
+  padding: 3px 7px;
+  border-radius: 2px;
+  transition: border-color ease-in-out 0.2s;
+  font-size: 15px;
+  color: #666;
+  background-color: #fafafa;
+}
+.multipleText:disabled{
+  background-color: #f5f5f5;
+}
+
+.multipleText:focus {
+  border-color: #329FD9;
+  outline: none;
+}
+.multipleText.error, .multipleText.error:hover, .multipleText.error:focus {
+  border-color: #d34747;
+}

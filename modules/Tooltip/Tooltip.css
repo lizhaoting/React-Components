@@ -1,0 +1,20 @@
+.container {
+  border-radius: 4px !important;
+  padding: 7px 10px !important;
+  font-size: 12px !important;
+  line-height: 18px !important;
+  max-width: 220px !important;
+  word-wrap: break-word;
+}
+
+:global(.place-bottom).container:after {
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  margin-left: -5px;
+}
+
+:global(.place-right).container {
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  margin-top: -5px;
+}

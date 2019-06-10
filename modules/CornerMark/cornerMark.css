@@ -1,0 +1,21 @@
+.cornermark {
+  color: #fff;
+  display: block;
+  min-width: 6px;
+  height: 16px;
+  background-color: #fe8e14;
+  border-radius: 8px;
+  font-size: 10px;
+  text-align: center;
+  line-height: 16px;
+  padding: 0px 5px;
+  float: left;
+}
+
+.simple {
+  vertical-align: top;
+  font-size: 15px;
+  font-weight: 600;
+  display: inline-block;
+  margin-left: 2px;
+}

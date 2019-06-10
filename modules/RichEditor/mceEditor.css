@@ -1,0 +1,161 @@
+.editorContainer {
+  position: relative;
+}
+
+.simpleEditor {
+  height: 123px;
+}
+
+.mce-edit-area {
+  padding-bottom: 60px!important;
+}
+
+div.simpleEditor :global(.mce-toolbar-grp) {
+  display: none!important;
+}
+
+div.simpleEditor :global(.mce-edit-area) {
+  border-width: 0px!important;
+}
+
+div.simpleEditor :global(.mce-panel) {
+  border: 0px !important;
+  height: 85px;
+}
+
+div[class^='mce-tinymce'] {
+  height: 100%;
+}
+
+div[class^='mce-container-body'] {
+  height: 100%;
+}
+
+div[class^='mce-edit-area'] {
+  height: calc(100% - 74px);
+}
+
+.attachmentIcon {
+  cursor: pointer;
+  font-size: 16px;
+  color: #6f6f6f;
+  display: inline-block;
+  position: absolute;
+  bottom: 0px;
+  left: 5px;
+}
+
+.editorFooter {
+  position: absolute;
+  left: 1px;
+  bottom: 0px;
+  right: 0px;
+  padding: 0px 10px;
+  height: 38px;
+  background: #fff;
+}
+
+.buttonGrp {
+  float: right;
+  display: none;
+}
+
+.showSend {
+  display: block;
+  position: absolute;
+  right: -5px;
+  bottom: 5px;
+}
+
+div[class*='mceEditor__showSend']>div:first-child {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: -4px;
+}
+
+.morebtn {
+  display: inline-block;
+  line-height: 30px;
+  height: 30px;
+  vertical-align: bottom;
+}
+
+.moreIcon {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.button {
+  min-width: 80px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.attachmentGrp {
+  display: flex;
+  flex-direction: row;
+  height: 33px;
+  bottom: 37px;
+  position: absolute;
+  padding: 5px 5px 5px 10px;
+  border-radius: 4px;
+  z-index: 1;
+  overflow: hidden;
+  width: calc(100% - 30px);
+}
+
+.innerContent {
+  height: 44px;
+  display: flex;
+  flex-direction: row;
+  height: 52px;
+  position: absolute;
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: calc(100% - 18px);
+}
+
+.openPopup {
+  right: 5px;
+  bottom: 40px;
+}
+
+.openPopup:before {
+  top: 0px!important;
+}
+
+.openPopup:after {
+  top: 94px;
+  transform: rotate(180deg) translateX(60%);
+}
+
+.ticketRicheditor {
+  margin-top: 10px;
+  margin-right: 2px;
+  flex: 1;
+}
+
+:global(.mce-toolbar-grp) {
+  padding: 1px 0px!important;
+}
+
+:global(.mce-panel) {
+  background: #f2f2f2!important;
+}
+
+.simpleSelect {
+  position: absolute;
+  bottom: 8px;
+  right: 270px;
+}
+
+.richEditor {
+  margin-top: 10px;
+  margin-right: 2px;
+  height: calc(100% - 103px);
+}
+
+.simpleModeHeight {
+  height: calc(100% - 75px)!important;
+}

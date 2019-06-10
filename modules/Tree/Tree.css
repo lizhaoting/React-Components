@@ -1,0 +1,132 @@
+.vm-tree {
+  margin: 0;
+  padding: 0;
+  -webkit-user-select: none;
+  user-select: none;
+  display: block;
+  min-width: 100%;
+}
+.vm-tree li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  white-space: nowrap;
+  outline: 0;
+}
+
+.vm-tree ul {
+  margin: 0;
+  padding: 0;
+  display: block;
+  min-width: 100%;
+}
+
+.vm-tree li .vm-tree-node-content-wrapper {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  vertical-align: middle;
+}
+.vm-tree li span.vm-tree-switcher {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 6px;
+}
+.vm-tree li span.vm-tree-icon{
+  display: inline-block;
+}
+
+.vm-tree li span.vm-tree-switcher.vm-tree-switcher-noop {
+  cursor: auto;
+}
+
+.vm-tree-child-tree {
+  display: none;
+}
+.vm-tree-child-tree-open {
+  display: block;
+}
+.vm-tree-treenode-disabled > span,
+.vm-tree-treenode-disabled > a,
+.vm-tree-treenode-disabled > a span {
+  color: #ccc;
+  cursor: not-allowed;
+}
+.vm-tree-node-expand-icon {
+  padding: 6px 5px 0px 15px;;
+  float: left;
+  margin-top: 2px;
+}
+.vm-tree-node-folder-icon {
+  margin-right: 10px;
+  float:left;
+  margin-top: 6px;
+  font-size: 16px;
+  color: #888;
+
+}
+.vm-tree-node-selected {
+  background-color: #ffe6b0;
+  border: 1px #ffb951 solid;
+  opacity: 0.8;
+}
+.depSpread {
+  transform: rotate(-90deg);
+}
+.vm-tree-itemWrapper{
+  height: 30px;
+  white-space: nowrap;
+  position: relative;
+  outline: none;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: default;
+}
+div.vm-tree-itemWrapper:hover {
+  background: #f1f1f1;
+}
+.dragging div.vm-tree-itemWrapper {
+  background: #fff;
+}
+div.vm-tree-itemWrapper.vm-tree-selected {
+  background: #e0f2f9;
+  border: 0;
+  outline: none;
+}
+.vm-tree-title-wrapper {
+    display: inline-block;
+    padding-left: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+span.vm-tree-icon + .vm-tree-title-wrapper {
+  padding-left: 8px;
+}
+
+.sortableWrapper {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  display: flex;
+  align-items: center;
+  left: 0px;
+  display: none;
+}
+.sortableWrapper i {
+    color: #888;
+    padding: 0 5px;
+    line-height: 30px;
+}
+.sortableWrapper i:hover {
+    color: #333;
+    cursor: move;
+}
+div.vm-tree-itemWrapper:hover .sortableWrapper {
+  display: flex;
+}
+
+.dragging div.vm-tree-itemWrapper:hover .sortableWrapper {
+  display: none;
+}

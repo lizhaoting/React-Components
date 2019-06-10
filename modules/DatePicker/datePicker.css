@@ -1,0 +1,40 @@
+.input {
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  border-radius: 2px;
+  transition: border-color ease-in-out 0.2s;
+  background-color: #fff;
+}
+
+.input:focus {
+  border-color: #329FD9;
+  outline: none;
+}
+
+.input.error,
+.input.error:hover,
+.input.error:focus {
+  border-color: #d34747;
+}
+
+span:focus {
+  outline: none;
+}
+
+span:focus .input {
+  border-color: #329FD9;
+  outline: none;
+}
+
+.dateDiv {
+  position: relative;
+  display: inline-block;
+}
+
+.dateicon {
+  position: absolute;
+  top: 7px;
+  right: 6px;
+  cursor: pointer;
+  color: #666;
+}

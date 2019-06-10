@@ -1,0 +1,327 @@
+.ModalClass {
+  position: relative;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 4px;
+  outline: none;
+  width: 500px;
+  min-height: 220px;
+  max-height: 600px;
+}
+
+.smallModal {
+  width: 500px!important;
+  min-height: 220px!important;
+  max-height: 400px!important;
+}
+
+.ModalClass h3 {
+  margin: 0 0 15px;
+  font-size: 18px;
+  line-height: 1;
+  text-align: center;
+  /* font-family: "SourceSans Pro Bold"; */
+}
+
+p {
+  margin: 0;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  color: #888;
+  text-shadow: 0 1px 0 #fff;
+  filter: alpha(opacity=20);
+  /*opacity: .2;*/
+  font-size: 8px;
+  outline: none;
+}
+
+.close i {
+  font-size: 10px
+}
+
+.close:focus,
+.close:hover {
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.close:hover {
+  color: #969696;
+}
+
+.close:focus {
+  color: #606060;
+}
+
+button.close {
+  -webkit-appearance: none;
+  padding: 0;
+  cursor: pointer;
+  background: 0 0;
+  border: 0;
+}
+
+.OverlayClass {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .45);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ModalClass .action {
+  margin-top: 20px;
+  text-align: center;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.ModalClass .action button {
+  margin-right: 15px;
+  text-align: center;
+  min-width: 80px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.ModalClass .action button:last-child {
+  margin-right: 0;
+}
+
+:global(.ReactModal__Body--open) :global(#app) {
+  filter: blur(2px);
+}
+
+.agentContainer .selectDepartment {
+  margin-top: 10px;
+}
+
+.transferChoose {
+  float: left;
+  width: 50%;
+}
+
+.transferButton {
+  width: 90px;
+}
+
+.transferChoose:last-child {
+  margin-right: 0
+}
+
+.transferName {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.availableList.agentlist {
+  height: 150px;
+}
+
+.availableList {
+  width: 350px;
+  height: 180px;
+  margin-top: 5px;
+  overflow-y: auto;
+  font-size: 13px;
+}
+
+.availableList li {
+  line-height: 30px;
+}
+
+.availableList li button {
+  display: block;
+  padding-left: 15px;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  word-break: break-word;
+  width: 100%;
+  text-align: left;
+  background: none;
+}
+
+.availableList li button:hover {
+  background: #e2e2e2;
+}
+
+.availableList li button.active {
+  background: #d6eff7!important;
+  cursor: default;
+}
+
+.availableList li i {
+  float: left;
+  margin-top: 3px;
+  margin-right: 8px;
+}
+
+.description {
+  color: #666;
+}
+
+.ModalLoading {
+  width: 70px;
+  height: 70px;
+  padding: 25px;
+  text-align: center;
+}
+
+.okButton {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: 20px;
+}
+
+.checkboxPanel {
+  float: left;
+}
+
+.ModalClass .action.buttonsPanel {
+  float: right;
+  margin-top: 0;
+}
+
+.modalAttachtTicket {
+  width: 350px
+}
+
+:global(.ReactModal__Overlay--after-open) {
+  animation-duration: .3s;
+  animation-name: fadeIn;
+  animation-iteration-count: 1;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+:global(.ReactModal__Content--after-open) {
+  animation-duration: .3s;
+  animation-name: fadeScale;
+  animation-iteration-count: 1;
+}
+
+@keyframes fadeScale {
+  from {
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+:global(.ReactModal__Overlay--before-close) {
+  animation-duration: .3s;
+  animation-name: fadeOut;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+:global(.ReactModal__Content--before-close) {
+  animation-duration: .3s;
+  animation-name: fadeShrink;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeShrink {
+  from {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7);
+    opacity: 0;
+  }
+}
+
+.dropdown {
+  z-index: 1000;
+}
+
+.errorContainer,
+.successContainer {
+  /*display: flex;
+  flex-direction: column;
+  justify-content: center;*/
+  background: transparent;
+  color: #fff;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+  bottom: 40%;
+  z-index: 9999;
+  text-align: center;
+}
+
+.errorContainer .message,
+.successContainer .message {
+  border-radius: 2px;
+  padding: 10px 15px;
+  margin: 0 auto;
+  font-size: 12px;
+}
+
+.errorContainer .message {
+  background: #ef7268;
+}
+
+.successContainer .message {
+  background: rgb(143, 197, 125);
+}
+
+.standbyNotice {
+  width: 362px;
+}
+
+.leavechataftertransfer {
+  position: absolute !important;
+  bottom: 70px;
+}

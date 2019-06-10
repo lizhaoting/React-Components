@@ -1,0 +1,86 @@
+.userAvtar {
+  flex: 0 0 35px;
+}
+.itemSection {
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  background: #fafafa;
+  display: inline-block;
+  min-width: 60%;
+}
+.itemSection:last-of-type {
+  margin-bottom: 10px;
+}
+.padding0 {
+  padding:0px;
+}
+.headerLayout {
+  margin-bottom: 10px;
+}
+.messageAvatar {
+  width: 35px !important;
+  height: 35px !important;
+}
+.headerSection {
+  height: 35px;
+  border: 0px;
+  overflow: hidden;
+}
+.hideSection{
+  border-bottom: 1px dotted #ccc;
+  padding-bottom: 10px;
+}
+.ulwraper {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+.ulwraper li {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: calc(100% - 10px);
+  line-height: 17px;
+  height: 17px;
+}
+.userInfo li:first {
+  color: #333;
+}
+.userInfo li:last-child{
+  color: #888;
+}
+.sendTime {
+  color: #888;
+  font-size: 15px;
+  text-align: right;
+}
+.hideWraper{
+  margin: 0px;
+}
+.hideWraper li{
+  height: 20px;
+  line-height: 20px;
+  color: #888;
+  font-size: 15px;
+}
+.value {
+  padding: 0px 0px 0px 10px;
+}
+.dropdownIcon {
+  color: #888;
+  font-size: 16px;
+  position: relative;
+  cursor: pointer;
+  top: 3px;
+  left: 5px;
+}
+.hide {
+  top: 2px;
+  transform: rotate(180deg);
+}
+.showMoreLink {
+  color: #888;
+  font-size: 15px;
+  text-decoration: none !important
+}

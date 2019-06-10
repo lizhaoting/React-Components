@@ -1,0 +1,38 @@
+.multiContainer {
+  color: #888;
+  width: 100%;
+}
+
+.editContainer {
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  padding: 0px 8px;
+  min-height: 30px;
+  outline: none;
+  width: 100%;
+}
+
+.eidtTitle {
+  margin-bottom: 5px;
+}
+
+.editItem {
+  display: flex;
+}
+
+.editItem input {
+  border: transparent;
+  background: transparent;
+  width: calc(100% - 50px);
+}
+
+.editMode {
+  border: 1px solid #329fd9;
+}
+
+.readMode {
+  line-height: 30px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

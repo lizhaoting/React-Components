@@ -1,0 +1,48 @@
+.content {
+  display: flex;
+  height: 60px;
+  border-bottom: 1px solid #ddd;
+}
+.left {
+  flex: 0 0 16px;
+}
+.right {
+  flex: 0 0 90px;
+}
+.middle {
+  flex: 1;
+  padding: 0px 10px;
+  overflow: hidden;
+}
+.semiboldLable18 {
+  font-size: 18px;
+  color: #333;
+  font-family: 'SourceSans Pro Bold';
+}
+.iconMargin5{
+  position: relative;
+  top:5px;
+}
+
+/* message layout */
+.messageSection {
+  height: 35px;
+  border: 0px;
+  overflow: hidden;
+  border: 0px;
+}
+.messageSection .userAvtar {
+  flex: 0 0 35px;
+}
+.messageSection .sendTime {
+  color: #888;
+  font-size: 15px;
+  text-align: right;
+}
+.messageSection .fullTime {
+  color: #888;
+  font-size: 15px;
+  text-align: right;
+  flex: 0 0 150px;
+}
+/* */

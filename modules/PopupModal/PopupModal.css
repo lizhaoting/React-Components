@@ -1,0 +1,43 @@
+.popupmodal {
+  background: #333;
+  font-size: 15px;
+  color: #fff;
+  max-width: 300px;
+  padding: 9px 20px;
+  border-radius: 4px;
+  z-index: 9999999;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  bottom: 30%;
+  left: calc(50% - 200px);
+  word-wrap: break-word;
+  word-break: normal;
+  overflow: hidden;
+  text-overflow: clip;
+  animation-duration: 3s;
+}
+
+.popupmodal p {
+  line-height: 22px;
+}
+
+.show {
+  opacity: 1;
+  visibility: visible;
+  animation-name: slideOut;
+  animation-duration: 3s;
+}
+
+@keyframes slideOut {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}

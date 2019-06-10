@@ -1,0 +1,14 @@
+.content{
+  position: absolute;
+  height: 37px;
+  bottom: 0px;
+  line-height: 37px;
+  background: #fedb9e;
+  width: 100%;
+  padding: 0px 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  z-index: 99999;
+}

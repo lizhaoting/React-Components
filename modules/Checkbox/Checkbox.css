@@ -1,0 +1,66 @@
+/* Stylesheet for Checkbox*/
+.container {
+  display: inline-block;
+}
+.innercontainer {
+  display: inline-block;
+  position: relative;
+  color: #666;
+  padding-left: 18px;
+}
+.innercontainer.disable {
+  pointer-events: none;
+}
+.checkboxContainer {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  margin-top: -7px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.checkboxContainer:hover {
+  border-color: #329fd9;
+}
+.disable .checkboxContainer {
+  cursor: normal;
+}
+.disable .checkboxContainer:hover {
+  border-color: #ddd;
+}
+.checkboxContainer i {
+  font-size: 14px;
+  position: relative;
+  left: -1px;
+}
+.checkboxContainer.selected {
+  color: #329fd9;
+}
+.checkboxContainer.unselected {
+  color: #fff;
+}
+
+.checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.horizontal {
+  display: inline-block;
+  margin-right: 10px;
+}
+.vertical {
+  display: block;
+}
+
+.innercontainer input[type='Checkbox']:disabled ~ .text {
+  opacity: 0.6;
+  pointer-events: none;
+}

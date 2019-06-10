@@ -1,0 +1,76 @@
+.scrollpanel {}
+
+.sectionContainer {}
+
+.scrollpanel :global(.iScrollVerticalScrollbar) {
+  width: 8px !important;
+}
+
+.scrollpanel :global(.iScrollIndicator) {
+  border: 0!important;
+  background: #cdcdcd!important;
+  border-radius: 1px!important;
+}
+
+.scrollpanel :global(.iScrollIndicator):hover {
+  background: #a8a8a8!important;
+}
+
+:global(.iScrollHorizontalScrollbar) {
+  height: 8px !important;
+}
+
+.conditionWraper {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+.conditionWraper ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+:global(.iScrollVerticalScrollbar),
+:global(.iScrollHorizontalScrollbar) {
+  display: none;
+}
+
+.hover> :global(.iScrollVerticalScrollbar),
+.hover> :global(.iScrollHorizontalScrollbar) {
+  display: block;
+}
+
+.richEditor .sectionContainer {
+  height: 100%;
+}
+
+.testStyle {
+  overflow: auto!important;
+}
+
+.testSuccess {
+  padding: 30px;
+}
+
+.testSuccess button {
+  margin-top: 15px;
+}
+
+.horizonLabel {
+  width: 100%;
+}
+
+.horizonLabel>.sectionContainer {
+  width: 100%;
+}
+
+.formPadding {
+  padding: 20px;
+}
+
+.formButtonGroup {
+  padding-bottom: 40px;
+  text-align: center;
+}

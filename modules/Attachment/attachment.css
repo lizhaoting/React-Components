@@ -1,0 +1,26 @@
+.icon{
+  padding-right: 10px;
+}
+.attachment{
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  height: 30px;
+  width: 100%;
+}
+.attachment li{
+  float: left;
+  clear: right;
+  height: 30px;
+  line-height: 30px;
+}
+.attachment button {
+  background: transparent;
+}
+.file {
+  border: 0px;
+  padding: 0px;
+}
+.file > span {
+  color: #329fd9;
+}

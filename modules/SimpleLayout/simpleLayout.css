@@ -1,0 +1,106 @@
+.content,
+.contentNoPadding {
+  padding: 0;
+}
+.padding20 {
+  padding: 20px;
+}
+.padding_20_0{
+  padding: 20px 0px;
+}
+.padding_0_0_20_0{
+  padding: 0px 0px 20px 0px;
+}
+.padding_10_0{
+  padding: 10px 0px;
+}
+.padding_0_0_0_20 {
+  padding: 0px 0px 0px 20px;
+}
+
+/* ticket layout */
+.ticketEmailTitle {
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #ccc;
+  background: #fafafa;
+  padding: 0px 20px;
+}
+.ticketEmailTitle button{
+  float: right;
+  margin-top: 3px;
+  margin-right: 0px;
+  color: #333;
+}
+.ticketLayout > :global(.simpleLayout_0) {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  top: 20px;
+  height: 80px;
+}
+.ticketLayout > :global(.simpleLayout_1) {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  top: 80px;
+  bottom: 185px;
+}
+.recycleBin > :global(.simpleLayout_1) {
+  bottom: 20px;
+}
+
+.ticketLayout > :global(.simpleLayout_2) {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  height: 165px;
+}
+/* message layout */
+.messageLayout{
+  width: 100%;
+  height: 100%;
+}
+.messageLayout > :global(.simpleLayout_0) {
+  width: 100%;
+  height: 100%;
+}
+.twoColumn_auto_100{
+  display: flex;
+}
+.twoColumn_auto_100 > :global(.simpleLayout_0) {
+  flex: 1;
+}
+.twoColumn_auto_100 > :global(.simpleLayout_1) {
+  flex: 0 0 100px;
+}
+
+/* column */
+.twoColumn {
+  display: flex;
+}
+.twoColumn > :global(.simpleLayout_0) {
+  flex: 1;
+}
+.twoColumn > :global(.simpleLayout_1) {
+  flex: 1;
+}
+
+/* two rows */
+.twoRows_40_auto {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.twoRows_40_auto > :global(.simpleLayout_0) {
+  flex: 0 0 40px;
+}
+.twoRows_40_auto > :global(.simpleLayout_1) {
+  flex: 1;
+}
+
+/* height 100% */
+.heightPercent100{
+  height: 100%;
+}

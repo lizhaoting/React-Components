@@ -1,0 +1,47 @@
+/* image*/
+.messageAvatar {
+  width: 35px !important;
+  height: 35px !important;
+}
+/* ul li */
+.ul{
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+.lableOneLine {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  width: 100%;
+}
+/* font size */
+.fontSize15_888 {
+  color: #888;
+  font-size: 15px;
+  line-height: 17px;
+}
+.fontSize15_333 {
+  color: #333;
+  font-size: 15px;
+  line-height: 17px;
+}
+.fontSizeBold18_333 {
+  color: #333;
+  font-size: 18px;
+  line-height: 20px;
+  font-family: 'SourceSans Pro Bold';
+}
+.fontSize15_fe8e14 {
+  color: #fe8e14;
+  font-size: 15px;
+  line-height: 17px;
+}
+
+/* line */
+.line_ccc{
+  border-bottom: 1px solid #ccc;
+  height: 1px;
+  font-size: 0px;
+}

@@ -1,0 +1,141 @@
+.button {
+  padding: 0px 10px;
+  margin-right: 0px;
+  float: right;
+}
+.dropdown {
+  float: right;
+  position: relative;
+  width: 16px;
+  height: 16px;
+}
+/* down style */
+.down.dropdown .menu {
+  position: absolute;
+  border: 1px solid #ddd;
+  background: #fafafa;
+  border-radius: 3px;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.15);
+  min-width: 120px;
+  right: -20px;
+  top: 35px;
+  opacity: 0;
+  z-index: -1!important;
+  visibility: hidden;
+  transform: translateY(-2em);
+}
+.dropdown .menu ul{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+.arrowDown + .menu li {
+  padding: 2px 15px;
+  cursor: pointer;
+  line-height: 19px;
+  border-bottom: 1px solid #ddd;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow:hidden;
+  height: 0;
+  transition: height .2s ease-in, padding .2s ease-in;
+}
+.arrowDown + .menu li:hover{
+  background-color: #e6e6e6;
+}
+.down .arrowDown:focus + .menu li,
+.down .menu:hover li{
+  height: 30px;
+  padding: 5px 15px;
+}
+.arrowDown{
+  margin: 5px;
+  outline: none;
+  cursor: pointer;
+}
+.down .arrowDown:focus + .menu,
+.down .menu:hover{
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0%);
+  z-index: 9999!important;
+  transition: all 0.3s ease-in-out 0s;
+}
+.down .menu:after,
+.down .menu:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -16px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+.down .menu:after {
+  right: 13px;
+  border-color: transparent transparent #ddd transparent;
+  border-width: 8px;
+  z-index: 999;
+}
+.down .menu:before {
+  right: 15px;
+  top: -12px;
+  border-color: transparent transparent #fafafa transparent;
+  border-width: 6px;
+  z-index: 1000;
+}
+/* end down */
+
+/* up style*/
+.up.dropdown .menu {
+  position: absolute;
+  border: 1px solid #ddd;
+  background: #fafafa;
+  border-radius: 3px;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.15);
+  min-width: 120px;
+  bottom: 20px;
+  top: auto;
+  right: -19px;
+  opacity: 0;
+  z-index: -1!important;
+  visibility: hidden;
+  transform: translateY(2em);
+}
+.up .arrowDown:focus + .menu li,
+.up .menu:hover li{
+  height: 30px;
+  padding: 5px 15px;
+}
+.up .arrowDown:focus + .menu,
+.up .menu:hover{
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0%);
+  z-index: 9999!important;
+  transition: all 0.3s ease-in-out 0s;
+}
+.up .menu:after,
+.up .menu:before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -16px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+.up .menu:after {
+  right: 13px;
+  border-color: #ddd transparent transparent transparent;
+  border-width: 8px;
+  z-index: 999;
+}
+.up .menu:before {
+  right: 15px;
+  bottom: -11px;
+  border-color: #fafafa transparent transparent transparent;
+  border-width: 6px;
+  z-index: 1000;
+}
+/*end up*/

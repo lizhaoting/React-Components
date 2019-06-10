@@ -1,0 +1,154 @@
+
+.paging{
+  text-align:center;
+  margin-top:20px;
+  font-size: 13px;
+  color: #333;
+}
+.paging .firstpage,.paging .prevpage,
+.paging .nextpage,.paging .lastpage{
+  position:relative;
+  top:4px;
+  display:inline-block;
+  width:18px;
+  height:18px;
+  margin-right:5px;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  cursor:pointer;
+}
+.paging .firstpage:hover,.paging .prevpage:hover,
+.paging .nextpage:hover,.paging .lastpage:hover{
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.paging .firstpage{
+  background:url('/../../Resources/Images/firstpage.png') no-repeat;
+}
+.paging .prevpage{
+  background:url('/../../Resources/Images/prevpage.png') no-repeat;
+}
+.paging .nextpage{
+  background:url('/../../Resources/Images/nextpage.png') no-repeat;
+}
+.paging .lastpage{
+  margin-right:20px;
+  background:url('../../Resources/Images/lastpage.png') no-repeat;
+}
+.paging .pagenum{
+  width: 25px;
+  height: 16px;
+  text-align:center
+}
+.paging .mr20{
+  margin-right:20px;
+}
+
+
+.selectBoxLikeness {
+  position: relative;
+  display: inline-block;
+  cursor: default;
+  text-align: left;
+  clear: both;
+  color: #333;
+  /*font-family: "Lucida Grande" , "Lucida Sans Unicode" , Arial, sans-serif;*/
+  font-family: Arial;
+  font-size:13.33px;
+  line-height:1.5
+}
+
+.selectBoxLikeness  span.selected {
+  padding:0 12px 0 12px;
+  border-radius: 5px;
+  background: #E7E7E7;
+  background: -moz-linear-gradient(top, #EDEDED 0%, #DEDEDE 100%);
+  background: -webkit-linear-gradient(top, #EDEDED 0%, #DEDEDE 100%);
+  background: -ms-linear-gradient(top, #EDEDED 0%, #DEDEDE 100%);
+  background: linear-gradient(to bottom, #EDEDED 0%, #DEDEDE 100%);
+  border: 1px solid #CCC;
+  overflow: hidden;
+  position: relative;
+  float: left;
+  height: 28px;
+  line-height: 28px;
+  z-index: 98;
+  /*font-family: Arial;*/
+  font-family: "Lucida Grande" , "Lucida Sans Unicode" , Arial, sans-serif;
+}
+.selectBoxLikeness  span.selected:after{
+  content:'';
+  background: url(/../../Resources/Images/dropdown.png) no-repeat;
+  display:inline-block;
+  width:13px;
+  height:8px;
+  float: right;
+  margin-top: 11px;
+}
+.selectBoxLikeness  span.selected:hover{
+  cursor: pointer;
+  background: #F4F4F4;
+  border: 1px solid #DCDCDC;
+}
+
+.selectBoxLikeness.selectPagesize{
+  position: absolute;
+  margin: 0 5px;
+}
+
+.selectBoxLikeness .selectOptions {
+  position: absolute;
+  top: 32px;
+  left: 0;
+  width:100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  background: #f6f6f6;
+  padding-top: 2px;
+  display: none;
+  max-height: 236px;
+  overflow-x:hidden;
+  overflow-y:auto;
+  z-index: 9999;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+}
+
+.selectBoxLikeness span.selectOption {
+  padding: 5px 12px;
+  font-weight:normal;
+  display: block;
+}
+
+.selectBoxLikeness span.selectOptionGroup {
+  width: 86%;
+  line-height: 8px;
+  padding: 5px 7%;
+}
+
+.selectBoxLikeness span.selectOption:hover, span.selectOptionGroup:hover {
+  cursor: pointer;
+  color: #f6f6f6;
+  background: #00A6FF;
+
+}
+
+.selectBoxLikeness .splitLine{
+  padding:0 12px;
+}
+
+.text,.password, .textarea {
+  border: 1px solid #cdcdcd;
+  margin-top: 0;
+  padding: 6px 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transition: border-color ease-in-out 0.2s;
+  -moz-transition: border-color ease-in-out 0.2s;
+  transition: border-color ease-in-out 0.2s;
+  font-family: "Lucida Grande" , "Lucida Sans Unicode" , Arial, sans-serif;
+  background-color: #f8f8f8;
+}
