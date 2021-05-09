@@ -10,7 +10,7 @@
   "dependencies": {
     "classnames": "^2.2.5",
     "iscroll": "^5.2.0",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.21",
     "prop-types": "^15.5.10",
     "rc-calendar": "^8.2.0",
     "rc-time-picker": "^2.4.0",
